@@ -1,6 +1,10 @@
 import java.sql.*;
 public class Conexio {
 
+
+/** 
+ * @return Connection
+ */
 public Connection getConexio() {
     Connection con = null;
     try

@@ -9,6 +9,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 @WebServlet("/eliminar")
 public class Eliminar extends HttpServlet {
+    
+    /** 
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
@@ -44,6 +51,13 @@ public class Eliminar extends HttpServlet {
         }
     }
 
+    
+    /** 
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 
